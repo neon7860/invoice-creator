@@ -1,0 +1,162 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background-color: #3A69D2;
+    color: whitesmoke;
+    padding: 35px 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+p{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* MAIN */
+
+main{
+    background-color: #1F2937;
+    color: whitesmoke;
+    min-height: 100vh;
+}
+
+.container{
+    width: 440px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.container-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 15px 0px;
+}
+
+.add-btn{
+    display: flex;
+    background-color: #3A69D2;
+    padding: 0px 10px 0.6px 10px;
+    font-size: 28px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.add-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+input{
+    padding: 6px 0px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-indent: 10px;
+}
+
+select{
+    padding: 6px;
+}
+
+.container-content{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-headers{
+    color: #D5D4D8;
+    font-size: 12px;
+}
+
+.container-task{
+    /* border: 1px solid red; */
+    width: 350px;
+}
+
+.taskItem{
+    display: flex;
+}
+
+.container-amount{
+    /* border: 1px solid green; */
+    width: 90px;
+    text-align: right;
+}
+
+.remove-el{
+    /* border: 1px solid white; */
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#task-el{
+    padding-left: 0px;
+}
+
+.container-footer{
+    display: flex;
+    /* border: 1px solid blue; */
+    border-top: 1px solid #C3C6DB;
+}
+
+.container-notes{
+    /* border: 1px solid pink; */
+    width: 230px;
+}
+
+.container-total{
+    /* border: 1px solid purple; */
+    width: 210px;
+    text-align: right;
+}
+
+h3{
+    font-size: 36px;
+    /* border: 1px solid white; */
+    margin: 0px;
+}
+
+.btn-invoice{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+button{
+    background-color: #3A69D2;
+    color: white;
+    font-size: 16px;
+    padding: 9px 17px 9px 15px;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 35px;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}

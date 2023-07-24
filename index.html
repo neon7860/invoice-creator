@@ -1,0 +1,54 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <header>
+                <h1>Invoice Creator</h1>
+                <p>Thanks for choosing GoodCorp, LLC!</p>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="container-input">
+                        <input id="input-task" type="text" placeholder="Enter task...">
+                        <select name="select-amount" id="select-amount">
+                            <option value="10"><span>£</span>10</option>
+                            <option value="20"><span>£</span>20</option>
+                            <option value="30"><span>£</span>30</option>
+                        </select>
+                        <div class="add-btn" id="add-btn"><span class="add-symbol">+</span></div>
+                    </div>
+                    
+                    <div class="container-content">
+                        <div class="container-task">
+                            <h4><span class="main-headers">TASK</span></h4>
+                            <ul id="task-el">
+                            </ul>
+                        </div>
+                        <div class="container-amount">
+                            <h4><span class="main-headers">TOTAL</span></h4>
+                            <ul id="amount-el">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-footer">
+                        <div class="container-notes">
+                                <h4><span class="main-headers">NOTES</span></h4>
+                                <p><span class="main-headers">We accept cash, credit card, or PayPal</span></p>
+                        </div>
+                        <div class="container-total">
+                                <h4><span class="main-headers">TOTAL AMOUNT</span></h4>
+                                <h3 id="total-el">£0</h3>
+                        </div>
+                    </div>
+                    <div class="btn-invoice">
+                        <button id="submit-invoice">Send invoice</button>
+                    </div>
+                </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
