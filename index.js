@@ -26,7 +26,7 @@ function render(arr){
     
     for (let item of arr){
         let strTask = `<div class="taskItem"><li>${item[0]}</li>
-        <span onClick="removeElement(${arr.indexOf(item)})" class="remove-el">Remove</span></div>`
+        <button onClick="removeElement(${arr.indexOf(item)})" class="remove-el">Remove</button></div>`
         let strAmount = `<li>£${item[1]}</li>`
         taskEL.innerHTML += strTask
         amountEl.innerHTML += strAmount
@@ -46,6 +46,7 @@ function removeElement(index){
     arr.splice(index, 1)
     render(arr)
 }
+
 
 function submit(){
     arr = []
