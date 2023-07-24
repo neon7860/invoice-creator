@@ -24,7 +24,7 @@ function render(arr){
     amountEl.innerHTML = ""
     // console.log(arr)
     
-    for (item of arr){
+    for (let item of arr){
         let strTask = `<div class="taskItem"><li>${item[0]}</li>
         <span onClick="removeElement(${arr.indexOf(item)})" class="remove-el">Remove</span></div>`
         let strAmount = `<li>£${item[1]}</li>`
